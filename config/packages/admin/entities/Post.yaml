@@ -1,0 +1,11 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        Post:
+          class : App\Entity\Post
+          templates:
+            edit : 'admin/post/edit.html.twig'
+          list : 
+            actions:
+              - {name: 'edit', icon: 'pencil', label: false, css_class: 'btn btn-secondary'}
+              - {name: 'delete', icon: 'trash', label: false, css_class: 'btn btn-danger'}
